@@ -1,0 +1,196 @@
+.main-pg{
+    background-color:black;  
+}
+.box{
+    margin: auto;
+    position: relative;
+    width: 500px;
+    height: 600px;
+    background: black;   
+}
+.box::before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right:-2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+    
+
+}
+.box::after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right:-2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(100px);
+
+}
+.box::before,
+.box::after
+{
+    background: linear-gradient(235deg,#14ffea,yellow,#14ffea);
+}
+.pip{
+    
+    background:black;
+    color:whitesmoke;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.pip::before{
+    content:"daily task";
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(1px);
+    text-align: center;
+   
+    
+
+}
+.neon{
+    display: inline-flex;
+    filter: brightness(200%);  
+    transform: translate(30%,30%);
+    overflow: hidden;
+}
+.gradient{
+    background: linear-gradient(114.5793141156962deg,rgb(6,227,250,1)4.927083333333334%,rgb(229,151,64,1)97.84374999999999%);
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 99%;
+    height: 97%;
+    
+    mix-blend-mode: multiply;
+}
+.smile{
+    background: radial-gradient(circle,white,black 25%)center/ 25% 25%;
+    position: absolute;
+    top: -90%;
+    left: -90%;
+    right: 0;
+    bottom: 0;
+    
+    mix-blend-mode: color-dodge;
+    animation: smile-area 3s linear infinite;
+}
+@keyframes smile-area{
+    to{
+        transform: translate(20%,20%);
+    }
+}
+.man{
+
+    border: 3px solid rgb(15, 150, 76);
+    width:40%;
+    min-width: 350px;
+    position:relative;
+    padding: 10px 35px;
+    transform: translate(50%,50%);
+    justify-content: center;
+    transform: translate(-50%,50%);
+    left: 50%;
+}
+.new{
+    border: 1px solid #14ffea;
+    border-radius: 50px;
+    width:100%;  
+}
+
+.input{
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    color: whitesmoke;
+    height: 30px;
+    font-weight: 500;
+    padding: 5px;
+    background-color:black;  
+    border-radius: 50px;
+    border: none;
+    
+    
+}
+.input:focus{
+    outline: none;
+}
+.new button{
+    width: 30px;
+    height:30px;
+    border-radius:25px;
+    border: none;
+    background-color:mediumvioletred;
+    color:black;
+    font-size: 15px;
+    font-weight: 700;   
+    cursor: pointer;
+}
+.addButton:hover{
+    background-color: #14ffea;
+}
+.to-do{
+    margin-top: 25px;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top:2rem;
+}
+.item{
+    padding: 3px;
+    margin-bottom:5pxrem;
+    border-bottom: 5px solid #fff;
+}
+.item_input{
+    background: none;
+    outline:none;
+    color:#14ffea;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border:none;
+    width:100px;
+    font-size: 15px;
+}
+.editButton{
+    font-size: 15px;
+    text-transform: uppercase;
+    margin:0 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background:none;
+    outline:none;
+    color:purple;
+    border:none;
+    cursor: pointer;
+}
+.editButton:hover{
+    color: #14ffea;
+}
+.removeButton{
+    font-size: 15px;
+    margin:0 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background:none;
+    outline:none;
+    color:purple;
+    border:none;
+    cursor: pointer;
+}
+.removeButton:hover{
+    color: #14ffea;
+}
