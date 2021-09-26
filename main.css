@@ -1,14 +1,14 @@
 .main-pg{
     background-color:black;  
 }
-.box{
+.sus{
     margin: auto;
     position: relative;
     width: 500px;
     height: 600px;
     background: black;   
 }
-.box::before{
+.sus::before{
     content: '';
     position: absolute;
     top: -2px;
@@ -20,7 +20,7 @@
     
 
 }
-.box::after{
+.sus::after{
     content: '';
     position: absolute;
     top: -2px;
@@ -32,8 +32,8 @@
     filter: blur(100px);
 
 }
-.box::before,
-.box::after
+.sus::before,
+.sus::after
 {
     background: linear-gradient(235deg,#14ffea,yellow,#14ffea);
 }
@@ -90,8 +90,8 @@
     }
 }
 .man{
-
-    border: 3px solid rgb(15, 150, 76);
+    position: fixed;
+    border: 3px solid black;
     width:40%;
     min-width: 350px;
     position:relative;
